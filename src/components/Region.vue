@@ -3,7 +3,7 @@ import CityApi from "../api/citys";
 import { ref } from "vue";
 const checkedCities = ref([]);
 const citys = ref([]);
-const pronce = ref([]);
+// const pronce = ref([]);
 CityApi.getCity().then((res) => {
   citys.value = res.data.data;
 });
